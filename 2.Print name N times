@@ -1,0 +1,16 @@
+
+# rpint name 5 times  ... t.c and s.c. is O(1)
+def print_name(name, cnt):
+    if cnt ==0:
+        return
+
+    print(name)
+    print_name(name,cnt-1)
+
+
+
+name = "Ravindra"
+cnt = int(input("Enter the value for count : "))
+print_name(name,cnt)
+
+
