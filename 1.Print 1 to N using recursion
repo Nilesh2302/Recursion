@@ -1,0 +1,28 @@
+#gfg
+
+# approch 1 t.c. and s.c O(N)
+class Solution:
+    
+    def printTillN(self, N):
+    	#code here 
+    	self.cnt = 1
+    	l = []
+    	def rec(N):
+    	    print(self.cnt,end=' ')
+    	    if self.cnt == N:
+    	        return
+    	    
+    	    self.cnt+=1
+    	    rec(N)
+    
+    	rec(N)
+
+
+# approch 2 t.c. and s.c O(N)
+class Solution:
+    def printTillN(self, N):
+    	if N==0:
+    	    return
+    	
+    	self.printTillN(N-1)    
+    	print(N,end=' ')     #print in reverse manner as store in a stack
