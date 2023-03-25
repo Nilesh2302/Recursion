@@ -18,7 +18,7 @@ class Solution:
     	rec(N)
 
 
-# approch 2 t.c. and s.c O(N)
+# approch 2 t.c. and s.c O(N)   .. this is the backtracing approch
 class Solution:
     def printTillN(self, N):
     	if N==0:
