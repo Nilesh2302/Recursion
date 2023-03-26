@@ -1,0 +1,19 @@
+# parameterized Way
+# def Sum(i, sum):
+#
+#     if i<1:
+#         print(sum)
+#         return
+#
+#     Sum(i-1,sum+i)
+# Sum(3, 0)
+
+# Functional Way
+def Sum(n):
+
+    if n == 0:
+        return 0
+    return n+Sum(n-1)
+
+n = 3
+print("the upto " ,n," numbers is : ",Sum(n))
